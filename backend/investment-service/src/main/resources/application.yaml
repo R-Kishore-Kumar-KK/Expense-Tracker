@@ -1,9 +1,9 @@
 spring:
   application:
-    name: auth-service
+    name: investment-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/fintrack_auth_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/fintrack_investment_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
     username: root
     password: root
 
@@ -16,7 +16,7 @@ spring:
         format_sql: true
 
 server:
-  port: 8081
+  port: 8083
 
 eureka:
   instance:

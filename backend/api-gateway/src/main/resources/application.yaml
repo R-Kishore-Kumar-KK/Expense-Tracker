@@ -16,6 +16,11 @@ spring:
               uri: lb://EXPENSE-SERVICE
               predicates:
                 - Path=/api/expenses/**
+                
+            - id: investment-service
+              uri: lb://INVESTMENT-SERVICE
+              predicates:
+                - Path=/api/investments/**
 
 server:
   port: 8080
