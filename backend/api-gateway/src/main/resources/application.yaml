@@ -26,6 +26,11 @@ spring:
               uri: lb://GOAL-SERVICE
               predicates:
                 - Path=/api/goals/**
+                
+            - id: loan-service
+              uri: lb://LOAN-SERVICE
+              predicates:
+                - Path=/api/loans/**
 
 server:
   port: 8080
